@@ -9,7 +9,7 @@ create table if not exists Taco_Order
     cc_number       varchar(16) not null,
     cc_expiration   varchar(5)  not null,
     cc_cvv          varchar(3)  not null,
-    placed_at       timestamp   not null
+    place_at timestamp not null
 );
 
 create table if not exists Taco
@@ -18,7 +18,7 @@ create table if not exists Taco
     name           varchar(50) not null,
     taco_order     bigint      not null,
     taco_order_key bigint      not null,
-    created_at     timestamp   not null
+    create_at timestamp not null
 );
 
 create table if not exists Ingredient_Ref

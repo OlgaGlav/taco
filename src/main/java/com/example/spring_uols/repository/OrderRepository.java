@@ -1,8 +1,9 @@
 package com.example.spring_uols.repository;
 
 import com.example.spring_uols.entity.TacoOrder;
+import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
 
-
-public interface OrderRepository {
-    TacoOrder save(TacoOrder tacoOrder);
+@Repository
+public interface OrderRepository extends CrudRepository<TacoOrder, Long> {
 }
